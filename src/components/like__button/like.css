@@ -1,0 +1,138 @@
+
+.like__container {
+    display: flex;
+    justify-content: end;
+    gap: 3px;
+    padding: 20px 25px 24px;
+    height: min-content;
+}
+
+.card__icon-button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: transparent; 
+   border: 2px solid transparent;
+   transition: 0.3s ease;
+   padding: 0;
+   inline-size: 47px;
+}
+
+.card__icon-button:focus-visible {
+   border: var(--themes-border);
+}
+
+.like__heart-icon {
+   align-self: center;   
+}
+
+#sparkle {
+   opacity: 0;
+}
+
+.card__icon-button:hover #core,
+.card__icon-button:active #core,
+.card__icon-button .is-liked #core {
+    transition: fill 0.3s 0s linear;
+}
+
+.card__icon-button:hover #main-body,
+.card__icon-button:active #main-body,
+.card__icon-button .is-liked #main-body {
+    transition: fill 0.3s 0.05s linear;
+}
+
+.card__icon-button:hover #core,
+.card__icon-button:hover #main-body {
+    fill: var(--themes-main-color);
+}
+
+.card__icon-button:active #core,
+.card__icon-button:active #main-body,
+.card__icon-button .is-liked #core,
+.card__icon-button .is-liked #main-body,
+.card__icon-button .is-liked #contour {
+    fill: var(--heart-fill-color);
+}
+
+.card__icon-button .is-liked #contour {
+    transition: fill 0.3s 0.06s linear;
+}
+
+.card__icon-button .is-liked #heart {
+    transform-origin: center;
+    animation: scale-heart 0.3s 0.1s ease-in alternate;
+}
+
+.card__icon-button .is-liked #sparkle {
+    transform-origin: center;
+    animation: sparkle 0.3s 0.3s ease-in alternate;
+}
+
+@keyframes scale-heart {
+    
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes sparkle {
+    
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.card__like-button {
+    text-align: center;
+    position: relative;
+    background-color: transparent;
+    border: var(--themes-border);
+    inline-size: 130px;
+    padding: 6px 12px;
+    transition: 0.3s ease;
+}
+
+.button__text {
+    font-family: var(--themes-accent-font), sans-serif;
+    font-size: 14px;
+}
+
+.theme-light .button__text:hover {
+    color: var(--themes-second-color);
+    mix-blend-mode: difference;
+}
+
+.card__like-button:focus-visible {
+    box-shadow: var(--themes-button-shadow);
+}
+
+.card__like-button::after {
+    content: '';
+    position: absolute;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    background-color: var(--themes-main-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+    mix-blend-mode: difference;
+}
+
+.theme-light .card__like-button::after {
+    background-color: var(--themes-second-color);
+}
+
+.card__like-button:hover::after {
+    transform: scaleX(1);
+}

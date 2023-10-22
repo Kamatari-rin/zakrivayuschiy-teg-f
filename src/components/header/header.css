@@ -1,0 +1,42 @@
+
+.header {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: var(--themes-main-color);
+    background-color: var(--themes-second-color);
+    border: var(--themes-border);
+    margin: 102px 0 100px;
+    padding: 120px 0 20px;
+}
+
+.header__title {
+    font-size: 49px;
+    margin-block-end: 20px;
+}
+
+.header__subtitle {
+    font-size: 14px;
+    margin-block-end: 22px;
+}
+
+.header__title, .header__subtitle {
+    font-family: var(--themes-accent-font);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media (width > 376px) {
+    
+    .header {
+        padding-block-start: 137px;
+    }
+
+    .header__title {
+        font-size: 65px;
+    }
+
+    .header__subtitle {
+        font-size: 23px;
+    }
+}

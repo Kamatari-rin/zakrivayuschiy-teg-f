@@ -1,0 +1,44 @@
+
+:root, :root.theme-dark {
+  --themes-main-color: var(--pressing-my-luck);
+  --themes-second-color: var(--black);
+  --shadow-color: var(--black);
+}
+
+:root.theme-light {
+  --themes-main-color: var(--black);
+  --themes-second-color: var(--white);
+  --themes-font-wight-default: 400;
+  --themes-font-wight-accent: 700;
+  --shadow-color: var(--white);
+}
+
+html {
+    background-image: var(--dark-background-gradient);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+html.theme-dark {
+  background-image: var(--dark-background-gradient);
+}
+
+html.theme-light {
+  background-image: var(--light-background-gradient);
+}
+
+
+@media (prefers-color-scheme: light) {
+
+  :root {
+    --themes-main-color: var(--black);
+    --themes-second-color: var(--white);
+    --themes-font-wight-default: 400;
+    --themes-font-wight-accent: 700;
+    --shadow-color: var(--white);
+  }
+  
+  html {
+      background-image: var(--light-background-gradient);
+  }
+}

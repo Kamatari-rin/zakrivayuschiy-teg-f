@@ -1,0 +1,74 @@
+.page {
+  min-inline-size: 320px;
+  min-block-size: 100dvb;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.card:nth-child(1) .card__img-wrapper::before,
+.card:nth-child(2) .card__img-wrapper::before {
+  content: '</HTML>';
+}
+
+.card:nth-child(3) .card__img-wrapper::before {
+  content: '<css>';
+}
+
+.card:nth-child(4) .card__img-wrapper::before {
+  content: '<desigions>';
+}
+
+.card:nth-child(5) .card__img-wrapper::before {
+  content: 'care';
+}
+
+.card:nth-child(6) .card__img-wrapper::before {
+  content: '<support>';
+}
+
+.card:nth-child(7) .card__img-wrapper::before {
+  content: '<lifes-style: none;>';
+}
+
+.card:nth-child(8) .card__img-wrapper::before {
+  content: '<experience>';
+}
+
+.card:nth-child(2) .card__img {
+  filter: saturate(20%);
+}
+
+.card:nth-child(3) .card__img {
+  filter: saturate(300%);
+}
+
+.card:nth-child(4) .card__img {
+  filter: hue-rotate(-335deg);
+}
+
+.card:nth-child(5) .card__img {
+  filter: invert(0.8);
+}
+
+.card:nth-child(6) .card__img {
+  filter: sepia(90%);
+}
+
+.card:nth-child(7) .card__img {
+  filter: blur(20px);
+}
+
+.card:nth-child(8) .card__img {
+  filter: blur(1px) brightness(170%) saturate(50%) hue-rotate(90deg);
+}
+
+@media (width > 376px) {
+    
+  .content {
+    gap: 57px;
+  }
+}

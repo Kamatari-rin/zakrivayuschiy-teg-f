@@ -1,0 +1,72 @@
+
+.popup {
+    background-color: var(--themes-second-color);
+    border: var(--themes-border);
+    padding: 32px 42px;
+    inline-size: clamp(341px, 100%, 357px);
+}
+
+.popup__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: var(--themes-accent-font); 
+    font-size: 14px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: var(--themes-main-color);
+    max-height: 60px;
+    margin-block-end: 30px;
+}
+
+.popup__icon {
+    inline-size: 39px;
+    block-size: 39px;
+}
+
+.popup__text {
+    max-inline-size: 198px;
+}
+
+.popup__button {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    inline-size: 100%;
+    font-family: var(--themes-accent-font); 
+    font-size: 14px;
+    color: var(--themes-main-color);
+    line-height: 90%;
+    background-color: var(--themes-second-color);
+    border: var(--themes-border);
+    padding: 15px 20px;
+    transition: 0.3s ease;
+}
+
+.popup__button::after {
+    content: '';
+    position: absolute;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    background-color: var(--themes-main-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+    mix-blend-mode: difference;
+}
+
+.theme-light .popup__button::after {
+    background-color: var(--themes-second-color);
+}
+
+.popup__button:hover::after {
+    transform: scaleX(1);
+}
+
+.popup__button:focus-visible {
+    box-shadow: var(--themes-button-shadow);
+}
