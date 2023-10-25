@@ -2,51 +2,8 @@
 .footer {
     display: flex;
     flex-direction: column;
-    margin: 54px 0 102px;
+    margin: 56px 0 102px;
     align-items: center;
-}
-
-.save-button {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    width: max-content;
-    font-family: var(--themes-accent-font); 
-    font-size: 14px;
-    color: var(--themes-main-color);
-    line-height: 90%;
-    background-color: var(--themes-second-color);
-    border: var(--themes-border);
-    padding: 15px 20px;
-    transition: 0.3s ease;
-}
-
-.save-button::after {
-    content: '';
-    position: absolute;
-    inset-inline-start: 0;
-    inset-block-start: 0;
-    inline-size: 100%;
-    block-size: 100%;
-    background-color: var(--themes-main-color);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.5s ease-in-out;
-    mix-blend-mode: difference;
-}
-
-.theme-light .save-button::after {
-    background-color: var(--themes-second-color);
-}
-
-.save-button:hover::after {
-    transform: scaleX(1);
-}
-
-.save-button:focus-visible {
-    box-shadow: var(--themes-button-shadow);
 }
 
 .footer__icon {
@@ -55,15 +12,9 @@
 }
 
 
-@media (width > 376px) {
-    
-    .save-button {
-        flex-direction: row;
-        padding: 16px 19px 14px;
-    }
+@container (inline-size > 376px) {
 
-    .footer__icon {
-        inline-size: 21px;
-        block-size: 21px;
+    .footer {
+        margin-block-start: 48px;
     }
   }

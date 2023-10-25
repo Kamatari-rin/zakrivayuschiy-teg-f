@@ -1,0 +1,63 @@
+
+.like__container {
+    display: flex;
+    justify-content: end;
+    gap: 3px;
+    padding: 24px 25px;
+    height: min-content;
+}
+
+.card__icon-button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: transparent; 
+   border: 2px solid transparent;
+   transition: 0.3s ease;
+   padding: 0;
+   inline-size: 47px;
+}
+
+.card__icon-button:focus-visible {
+   border: var(--themes-border);
+}
+
+.like__heart-icon {
+   align-self: center;   
+}
+
+.card__like-button {
+    text-align: center;
+    position: relative;
+    background-color: transparent;
+    border: var(--themes-border);
+    inline-size: 130px;
+    padding: 2px 12px 0;
+    transition: 0.3s ease;
+}
+
+.button__text {
+    font-family: var(--themes-accent-font), fantasy;
+    font-size: 14px;
+}
+
+.card__like-button:focus-visible {
+    box-shadow: var(--themes-button-shadow);
+}
+
+.card__like-button::after {
+    content: '';
+    position: absolute;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+    mix-blend-mode: difference;
+}
+
+.card__like-button:hover::after {
+    transform: scaleX(1);
+}

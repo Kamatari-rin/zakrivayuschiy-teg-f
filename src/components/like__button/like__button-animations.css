@@ -1,0 +1,64 @@
+.sparkle {
+    opacity: 0;
+ }
+ 
+ .card__icon-button:hover .core,
+ .card__icon-button:active .core,
+ .card__icon-button .is-liked .core {
+     transition: fill 0.3s 0s linear;
+ }
+ 
+ .card__icon-button:hover .main-body,
+ .card__icon-button:active .main-body,
+ .card__icon-button .is-liked .main-body {
+     transition: fill 0.3s 0.05s linear;
+ }
+ 
+ .card__icon-button:hover .core,
+ .card__icon-button:hover .main-body {
+     fill: var(--themes-main-color);
+ }
+ 
+ .card__icon-button:active .core,
+ .card__icon-button:active .main-body,
+ .card__icon-button .is-liked .core,
+ .card__icon-button .is-liked .main-body,
+ .card__icon-button .is-liked .contour {
+     fill: var(--heart-fill-color);
+ }
+ 
+ .card__icon-button .is-liked .contour {
+     transition: fill 0.3s 0.06s linear;
+ }
+ 
+ .card__icon-button .is-liked .heart {
+     transform-origin: center;
+     animation: scale-heart 0.3s 0.1s ease-in alternate;
+ }
+ 
+ .card__icon-button .is-liked .sparkle {
+     transform-origin: center;
+     animation: sparkle 0.3s 0.3s ease-in alternate;
+ }
+ 
+ @keyframes scale-heart {
+     
+     0% {
+         transform: scale(1);
+     }
+ 
+     100% {
+         transform: scale(1.5);
+     }
+ }
+ 
+ @keyframes sparkle {
+     
+     0% {
+         opacity: 0;
+     }
+ 
+     100% {
+         opacity: 1;
+     }
+ }

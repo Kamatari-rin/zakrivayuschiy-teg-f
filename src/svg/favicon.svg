@@ -1,10 +1,15 @@
-<svg width="256" height="256" viewBox="0 0 256 256" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<svg width="256" height="256" viewBox="0 0 256 256" fill="white" xmlns="http://www.w3.org/2000/svg">
     <style>
+    
+        path {
+            fill: #00cc14;
+        }git 
         @media (prefers-color-scheme: light) {
-            :root {
-                fill: black;
-            }
+         
+         path {
+            fill: #000;
         }
+     }
     </style>
         <path d="M128 128H160V160H128V128Z" fill="white"/>
         <path d="M96 128V96H128V128H96Z" fill="white"/>

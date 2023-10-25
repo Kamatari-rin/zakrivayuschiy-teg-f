@@ -1,0 +1,38 @@
+
+/* General styles */
+
+@import url(fonts.css);
+
+@import url(variables.css);
+
+@import url(globals.css);
+
+@import url(style.css);
+
+@import url(themes.css);
+
+/* Header styles */
+
+@import url(../components/header/header.css);
+
+@import url(../components/header/header__menu.css);
+
+@import url(../components/header/header__menu-animations.css);
+
+/* Article styles */
+
+@import url(../components/card/card.css);
+
+/* Like button styles */
+
+@import url(../components/like__button/like__button.css);
+
+@import url(../components/like__button/like__button-animations.css);
+
+/* Footer styles */
+
+@import url(../components/footer/footer.css);
+
+@import url(../components/footer/popup.css);
+
+@import url(../components/footer/save__button.css);

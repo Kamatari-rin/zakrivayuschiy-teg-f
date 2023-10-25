@@ -1,0 +1,56 @@
+
+.save-button {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: max-content;
+    font-family: var(--themes-accent-font), fantasy; 
+    font-size: 14px;
+    line-height: 90%;
+    background-color: var(--themes-second-color);
+    border: var(--themes-border);
+    padding: 15px 20px;
+    transition: 0.3s ease;
+}
+
+.popup .save-button {
+    min-inline-size: 257px;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+.save-button::after {
+    content: '';
+    position: absolute;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+    mix-blend-mode: difference;
+}
+
+.save-button:hover::after {
+    transform: scaleX(1);
+}
+
+.save-button:focus-visible {
+    box-shadow: var(--themes-button-shadow);
+}
+
+@container (inline-size > 376px) {
+    
+    .save-button {
+        flex-direction: row;
+        padding: 16px 19px 14px;
+    }
+
+    .footer__icon {
+        inline-size: 21px;
+        block-size: 21px;
+    }
+  }

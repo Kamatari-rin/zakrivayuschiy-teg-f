@@ -10,13 +10,16 @@
     --placebo: #e7e7e7;
     --eerie-black: #1a1a1a;
 
-    --themes-main-font: 'Inter';
+    --themes-main-font: sans-serif;
     --themes-accent-font: 'Press Start 2P';
     --themes-font-wight-default: 465;
     --themes-font-wight-accent: 785;
 
     --themes-border: 2px solid var(--themes-main-color);
     --themes-button-shadow: 2px 2px 0 var(--themes-main-color);
+
+    --heart-fill-color: var(--red);
+    --heart-sparkl-color: var(--red);   
 
     --shadow-color: var(--black);
     --text-shadow: 
@@ -49,7 +52,9 @@
             transparent var(--bg-gradient-size) calc(var(--bg-gradient-size) * 2)
         ),
 
-        linear-gradient(var(--dark-bg-linear-gradient-color-top), var(--dark-bg-linear-gradient-color-bottom));
+        linear-gradient(
+            var(--dark-bg-linear-gradient-color-top),
+            var(--dark-bg-linear-gradient-color-bottom));
 
     --light-background-gradient:
         repeating-linear-gradient(
@@ -66,8 +71,12 @@
 
         linear-gradient(
             var(--light-bg-linear-gradient-color-top) 0% 0.01%,
-            var(--light-bg-linear-gradient-color-bottom)); 
-            
-    --heart-fill-color: var(--red);
-    --heart-sparkl-color: var(--red);        
+            var(--light-bg-linear-gradient-color-bottom));      
 }
+
+@supports (font-variation-settings: normal) {
+    
+    :root {
+        --themes-main-font: 'Inter';
+    }
+} 

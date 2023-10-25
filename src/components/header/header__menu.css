@@ -1,13 +1,13 @@
 
 .theme-menu__list {
     display: grid;
-    gap: 10px;
+    gap: 8px;
     justify-content: center;
     padding-inline-start: 20px;
 }
 
 .theme-menu__button {
-    font-family: var(--themes-accent-font);
+    font-family: var(--themes-accent-font), fantasy;
     text-transform: uppercase;
     background-color: transparent;
     font-size: 14px;
@@ -17,44 +17,4 @@
 
 .theme-menu__button:disabled {
     pointer-events: none;
-}
-
-.theme-menu__button:hover,
-.theme-menu__button:disabled,
-.theme-menu__button:focus-visible {
-    opacity: 0.6;
-    transition: 0.3s ease;
-}
-
-.theme-menu__button::after {
-    content: '';
-    display: block;
-    block-size: 1px;
-    inline-size: 100%;
-    background-color: var(--themes-main-color);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-}
-
-.theme-menu__button:focus-visible::after {
-    transform: scaleX(1);
-}
-
-.theme-menu__button:disabled::before {
-    content: '▶';
-    position: absolute;
-    inset-inline-start: -12px;
-    animation: hover-effect 0.5s ease-in-out infinite alternate;
-}
-
-@keyframes hover-effect {
-    
-    0% {
-        inset-inline-start: -12px;
-    }
-
-    100% {
-        inset-inline-start: -16px;
-    }
 }

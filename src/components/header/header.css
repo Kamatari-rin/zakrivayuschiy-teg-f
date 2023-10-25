@@ -7,36 +7,30 @@
     background-color: var(--themes-second-color);
     border: var(--themes-border);
     margin: 102px 0 100px;
-    padding: 120px 0 20px;
+    padding: 118px 0 20px;
+    container: header / inline-size;
 }
 
 .header__title {
-    font-size: 49px;
+    font-size: clamp(49px, 7vw, 65px);
     margin-block-end: 20px;
+    font-weight: 400;
 }
 
 .header__subtitle {
-    font-size: 14px;
+    font-size: clamp(14px, 2.5vw, 23px);
     margin-block-end: 22px;
 }
 
 .header__title, .header__subtitle {
-    font-family: var(--themes-accent-font);
+    font-family: var(--themes-accent-font), fantasy;
     text-transform: uppercase;
     text-align: center;
 }
 
-@media (width > 376px) {
+@container page (inline-size > 376px) {
     
     .header {
-        padding-block-start: 137px;
-    }
-
-    .header__title {
-        font-size: 65px;
-    }
-
-    .header__subtitle {
-        font-size: 23px;
+        padding: 134px 0 20px;
     }
 }

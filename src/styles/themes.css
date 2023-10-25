@@ -27,6 +27,43 @@ html.theme-light {
   background-image: var(--light-background-gradient);
 }
 
+/* Like button dark */
+
+.save-button,
+.theme-dark .save-button,
+.popup__button,
+.theme-dark .popup__button {
+  color: var(--themes-main-color);
+}
+
+.card__like-button::after,
+.theme-dark .card__like-button::after,
+.save-button::after,
+.theme-dark .save-button::after,
+.popup__button::after,
+.theme-dark .popup__button::after {
+  background-color: var(--themes-main-color);
+}
+
+.card__like-button:hover::after,
+.theme-dark .card__like-button:hover::after {
+  color: var(--themes-second-color);
+  background-color: var(--themes-main-color);
+}
+
+/* Like button light */
+
+.theme-light .card__like-button::after,
+.theme-light .save-button::after {
+  background-color: var(--themes-second-color);
+}
+
+.theme-light .card__like-button:hover::after,
+.theme-light .save-button:hover::after,
+.theme-light .popup__button:hover::after {
+  color: var(--themes-main-color);
+  background-color: var(--themes-second-color);
+}
 
 @media (prefers-color-scheme: light) {
 
@@ -40,5 +77,16 @@ html.theme-light {
   
   html {
       background-image: var(--light-background-gradient);
+  }
+
+  .card__like-button::after,
+  .save-button::after,
+  .popup__button::after {
+    background-color: var(--themes-second-color);
+  }
+
+  .card__like-button:hover::after {
+    color: var(--themes-main-color);
+    background-color: var(--themes-second-color);
   }
 }
