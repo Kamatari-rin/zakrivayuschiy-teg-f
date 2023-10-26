@@ -10,8 +10,6 @@
   gap: 50px;
 }
 
-
-
 .card:nth-child(2) .card__img {
   filter: saturate(20%);
 }

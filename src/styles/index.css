@@ -1,15 +1,17 @@
+/* Пока не очень понятно как правильно называть и создавать структуру по БЭМ
+Теории было по этому мало плюс примеров небыло совсем. Надеюсь позже разберусь получше. */
 
 /* General styles */
 
-@import url(fonts.css);
+@import url(./fonts.css);
 
-@import url(variables.css);
+@import url(./variables.css);
 
-@import url(globals.css);
+@import url(./globals.css);
 
-@import url(style.css);
+@import url(./style.css);
 
-@import url(themes.css);
+@import url(./themes.css);
 
 /* Header styles */
 
@@ -25,9 +27,9 @@
 
 /* Like button styles */
 
-@import url(../components/like__button/like__button.css);
+@import url(../components/like/like__button.css);
 
-@import url(../components/like__button/like__button-animations.css);
+@import url(../components/like/like__button-animations.css);
 
 /* Footer styles */
 

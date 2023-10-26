@@ -61,7 +61,7 @@
 @supports((text-stroke: 1px #000000) or (-webkit-text-stroke: 1px #000000)) {
     
     .card__img-label {
-        -webkit-text-stroke: 0.2px var(--shadow-color);
+        -webkit-text-stroke: 1px var(--shadow-color);
         text-stroke: 1px var(--shadow-color);
         text-shadow: none;
     }

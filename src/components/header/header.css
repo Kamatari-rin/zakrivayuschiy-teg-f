@@ -11,18 +11,18 @@
     container: header / inline-size;
 }
 
-.header__title {
+.header-link {
     font-size: clamp(49px, 7vw, 65px);
     margin-block-end: 20px;
     font-weight: 400;
 }
 
-.header__subtitle {
+.header-subtitle {
     font-size: clamp(14px, 2.5vw, 23px);
     margin-block-end: 22px;
 }
 
-.header__title, .header__subtitle {
+.header-link, .header-subtitle {
     font-family: var(--themes-accent-font), fantasy;
     text-transform: uppercase;
     text-align: center;

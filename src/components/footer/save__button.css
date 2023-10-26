@@ -16,9 +16,10 @@
 }
 
 .popup .save-button {
-    min-inline-size: 257px;
+    inline-size: clamp(257px, 100%, 293px);
     text-transform: uppercase;
     justify-content: center;
+    padding: 12px;
 }
 
 .save-button::after {

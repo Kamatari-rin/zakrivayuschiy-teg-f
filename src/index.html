@@ -11,10 +11,8 @@
   </head>
   <body class="page">
     <header class="header">
-      <a class="header-link">
-        <h1 class="header__title">&#60;/html&#62;</h1>
-      </a>  
-      <h1 class="header__subtitle">закрывающий тег</h1>
+      <a class="header-link">&#60;/html&#62;</a>  
+      <h1 class="header-subtitle">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
@@ -304,7 +302,9 @@
         </svg>
         <span class="popup__text">Вставьте дискету, чтобы продолжить</span>
       </div>
-      <button class="save-button" onclick="window['popup'].close()">ok</button>
+      <form class="popup-close" method="dialog">
+        <button class="save-button">ok</button>
+      </form>
     </dialog>
 
     <script src="./scripts/like.js"></script>
