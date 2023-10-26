@@ -1,9 +1,10 @@
-<svg width="256" height="256" viewBox="0 0 256 256" fill="white" xmlns="http://www.w3.org/2000/svg">
+<svg width="256" height="256" viewBox="0 0 256 256" fill="curentColor" xmlns="http://www.w3.org/2000/svg">
     <style>
     
         path {
             fill: #00cc14;
-        }git 
+        }
+
         @media (prefers-color-scheme: light) {
          
          path {

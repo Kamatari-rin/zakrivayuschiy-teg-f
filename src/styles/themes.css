@@ -30,18 +30,14 @@ html.theme-light {
 /* Like button dark */
 
 .save-button,
-.theme-dark .save-button,
-.popup__button,
-.theme-dark .popup__button {
+.theme-dark .save-button {
   color: var(--themes-main-color);
 }
 
 .card__like-button::after,
 .theme-dark .card__like-button::after,
 .save-button::after,
-.theme-dark .save-button::after,
-.popup__button::after,
-.theme-dark .popup__button::after {
+.theme-dark .save-button::after {
   background-color: var(--themes-main-color);
 }
 
@@ -59,8 +55,7 @@ html.theme-light {
 }
 
 .theme-light .card__like-button:hover::after,
-.theme-light .save-button:hover::after,
-.theme-light .popup__button:hover::after {
+.theme-light .save-button:hover::after {
   color: var(--themes-main-color);
   background-color: var(--themes-second-color);
 }
@@ -80,8 +75,7 @@ html.theme-light {
   }
 
   .card__like-button::after,
-  .save-button::after,
-  .popup__button::after {
+  .save-button::after {
     background-color: var(--themes-second-color);
   }
 
